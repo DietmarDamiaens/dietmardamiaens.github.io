@@ -55,6 +55,37 @@ body {
   h1, h2 {
     color: #146C94;
   }
+
+  /* Seminar cards: equal height blocks */
+  .seminar-card {
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seminar-card > .row {
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* Center the image within its column */
+  .seminar-card .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Seminar images: shrink to fit without cropping */
+  .seminar-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
   
   /* Custom card section for the homepage */
   .welcome-section {
