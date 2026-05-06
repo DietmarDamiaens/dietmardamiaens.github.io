@@ -385,6 +385,20 @@ section .seminar-card:nth-of-type(6) { animation-delay: 0.30s; }
 
 .seminar-card:hover .seminar-img { transform: scale(1.06); }
 
+/* ----- Activity images ----- */
+.activity-img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 6px 20px rgba(20, 108, 148, 0.12);
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover .activity-img { transform: scale(1.03); }
+
 /* ----- Reduce motion ----- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
